@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var inputcolor = prompt("Enter the Traffic Signal Color");
+        let converttolowerCase = inputcolor.toLowerCase();
+        if (converttolowerCase === "red" || converttolowerCase === "yellow" || converttolowerCase === "green") {
+            if (converttolowerCase === "red") {
+                document.write("Must Stop")
+            }
+            if (converttolowerCase === "green") {
+                document.write("Move now")
+            }
+            if (converttolowerCase === "yellow") {
+                document.write("Ready to move")
+            }
+        }
+        else {
+            document.write("Not a Valid Input")
+        }
+
+    </script>
+</body>
+
+</html>

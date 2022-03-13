@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var number1 = parseInt(prompt("Enter First Number"));
+        var number2 = parseInt(prompt("Enter Second Number"));
+        var operator = prompt("Enter a Operator");
+        if (operator === "+") {
+            document.write("The sum of Number  is " + (number1 + number2));
+        }
+        else if (operator === "-") {
+            document.write("The Difference of Number is " + (number1 - number2));
+        }
+        else if (operator === "*") {
+            document.write("The Multiplication of Number is " + (number1 * number2));
+        }
+        else if (operator === "/") {
+            document.write("The Devision of Number is  " + (number1 / number2));
+        }
+        else if (operator === "%") {
+            document.write("The Remainder of Number is " + (number1 % number2));
+        }
+        else {
+            document.write("Invalid Operator")
+        }
+    </script>
+</body>
+
+</html>

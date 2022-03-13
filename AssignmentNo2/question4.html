@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Perecentage</h1>
+    <script>
+        var marksobtained = parseInt(prompt("Enter a Marks Obtained in Different Subject"));
+        var totalMarks = parseInt(prompt("Enter the total Marks"));
+        var percentage = (marksobtained / totalMarks) * 100;
+        if (percentage >= 35 && percentage <= 60) {
+            document.write(`Fail`);
+            document.write("<br />");
+            document.write(`Remarks :Sorry`);
+        }
+        else if (percentage >= 61 && percentage <= 70) {
+            document.write(`Grade B`);
+            document.write("<br />");
+            document.write(`Remarks : You need to Improvee`);
+
+        }
+        else if (percentage >= 71 && percentage <= 80) {
+            document.write(`Grade A`);
+            document.write("<br />");
+            document.write(`Remarks : Good`);
+        }
+        else if (percentage >= 81 && percentage <= 100) {
+            document.write(`Grade A-1`);
+            document.write("<br />");
+            document.write(`Remarks : Excellent`);
+        }
+        else {
+            document.write(`Invalid Input or Fail`)
+        }
+    </script>
+</body>
+
+</html>

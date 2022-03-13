@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var inputnumber = prompt("Enter a Time");
+        function get24HrsFrmAMPM(timeStr) {
+            if (timeStr && timeStr.indexOf(' ') !== -1 && timeStr.indexOf(':') !== -1) {
+                var hrs = 0;
+                var tempAry = timeStr.split(' ');
+                var hrsMinAry = tempAry[0].split(':');
+                hrs = parseInt(hrsMinAry[0], 10);
+                if ((tempAry[1] == 'AM' || tempAry[1] == 'am') && hrs == 12) {
+                    hrs = 0;
+                } else if ((tempAry[1] == 'PM' || tempAry[1] == 'pm') && hrs != 12) {
+                    hrs += 12;
+                }
+                return ('0' + hrs).slice(-2) + ':' + ('0' + parseInt(hrsMinAry[1], 10)).slice(-2);
+            } else {
+                return null;
+            }
+        }
+        var outcome = get24HrsFrmAMPM(inputnumber)
+        // document.write(outcome)
+        if (outcome > "00:00" && outcome < "12:00") {
+            document.write(" Good Morning")
+        }
+        else if (outcome >= "12:00" && outcome < "17:00") {
+            document.write("Good Afternoon")
+        }
+        else if (outcome > "17:00" && outcome < "21:00") {
+            document.write("Good Evening")
+        }
+        else if (outcome >= "21:00" && outcome < "23:59") {
+            document.write("Good Night")
+        }
+        else{
+            document.write("Invalid")
+        }
+    </script>
+</body>
+
+</html>
