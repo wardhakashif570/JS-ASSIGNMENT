@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var colorname = ['red', 'orange', 'yellow']
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+
+        var inputuser = prompt("Enter the colour you want to add at the beginning of Array");
+        colorname.unshift(inputuser)
+        document.write("<h1>Start of Array</h1>")
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+
+        var inputuser1 = prompt("Enter the colour you want to add at the end of Array");
+        colorname.push(inputuser1)
+        document.write("<h1>End of Array</h1>")
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+
+        document.write("<h1>Start of Array</h1>")
+        var inputuser3 = prompt("Enter the colour you want to add at the beginning of Array");
+        colorname.unshift(inputuser3)
+        var inputuser4 = prompt("Enter the colour you want to add at the beginning of Array");
+        colorname.unshift(inputuser4)
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+
+        document.write("<h1>Deleste first character of Array</h1>")
+        colorname.shift(inputuser)
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+        document.write("<h1>Deleste last character of Array</h1>")
+        colorname.pop(inputuser)
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+
+        document.write("<h1>Add Index to Add</h1>")
+        var inputuser5 = parseInt(prompt("Add Index to Add"));
+        var inputuser6 = prompt("Add Color to Add");
+        colorname.splice(inputuser5,0,inputuser6)
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+
+        document.write("<h1>Remove elements from array</h1>")
+        var inputuser7 = parseInt(prompt("Add start Index to Delete"));
+        var inputuser8 = parseInt(prompt("AddEnd of Index"));
+        colorname.splice(inputuser7,inputuser8)
+        colorname.map(item => {
+            document.write('<br />' + item)
+        })
+    </script>
+</body>
+
+</html>

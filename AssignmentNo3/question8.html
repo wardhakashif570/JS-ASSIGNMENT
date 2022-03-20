@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+        document.write("Counting : ")
+        a.map(item => {
+            document.write(item + ",")
+        })
+        document.write("<br/>")
+        var b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        document.write("Reverse Counting : ")
+        document.write(b.sort(function (c, d) {
+            return d - c;
+        }))
+
+        var e = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        document.write("<br/>")
+        document.write("Even : ")
+        for (let i = 0; i < e.length; i++) {
+            if (i % 2 === 0) {
+                document.write(i + ',')
+            }
+        }
+        document.write("<br/>")
+        document.write("Odd : ")
+        for (let i = 0; i < e.length; i++) {
+            if (i % 2 !== 0) {
+                document.write(i + ',')
+            }
+        }
+        document.write("<br/>")
+        document.write("Series : ")
+        for (let i = 1; i < e.length; i++) {
+            if (i % 2 === 0) {
+                document.write(i + 'k' + ',')
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
