@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+          var continueplaying;
+        var askagain = parseFloat(prompt("Do you want to start the Game 1 for Yes and 0 for No"));
+        if (askagain === 1) {
+            continueplaying = true;
+        }
+        else {
+            continueplaying = false;
+        }
+        if (continueplaying) {
+            var randomNumber = Math.floor(Math.random() * 101);
+            console.log(randomNumber)
+            let i = 3;
+            var answer;
+            while (i > 0) {
+                var userinput = parseFloat(prompt("Guess the Number"));
+                i--;
+                if (randomNumber === userinput) {
+                    answer = true;
+                    break;
+                }
+                else {
+                    continue;
+                }
+            }
+            if (answer) {
+                document.write("You are Correct");
+            }
+            else {
+                document.write("You Fail");
+            }
+        }
+        else {
+            document.write("Game Over")
+        }
+
+    </script>
+</body>
+
+</html>

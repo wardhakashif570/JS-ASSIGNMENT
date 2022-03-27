@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        isWeekend = (datetest) => {
+            if (datetest.getDay() == 6 || datetest.getDay() == 0) {
+                document.write("Its a Weekend")
+            }
+            else {
+                return datetest.getDay()
+            }
+        }
+        var dates = isWeekend(new Date('Mar 29, 2022'));
+        if (dates + 5 === 6) {
+            document.write("Sorry ! wait for 4 more days")
+        }
+        if (dates + 4 === 6) {
+            document.write("Sorry ! wait for 3 more days")
+        }
+        if (dates + 3 === 6) {
+            document.write("Sorry ! wait for 2 more days")
+        }
+        if (dates + 2 === 6) {
+            document.write("Sorry ! wait for 1 more days")
+        } if (dates + 2 === 6) {
+            document.write("Sorry ! wait for tomorrow")
+        }
+
+
+    </script>
+</body>
+
+</html>

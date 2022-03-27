@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var money = Number(prompt("Enter you Amount in Hundreds"));
+        document.write("Required Notes of Hundred are " +  Math.trunc(money / 100) + "<br />");
+        document.write("Required Notes of Fifty are " +  Math.trunc((money % 100) / 50) + "<br />");
+        document.write("Required Notes of Tens are " + ((money % 100 % 50) / 10) + "<br />");
+    </script>
+</body>
+
+</html>
